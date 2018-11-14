@@ -13,7 +13,7 @@ if£º
 	
 	   if(Ìõ¼þ)
 	   {
-	   	            pthread_cond_wait(&cond, &mutex);
+	   	  pthread_cond_wait(&cond, &mutex);
 	   }
 		i++	   
 	   
