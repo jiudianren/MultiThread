@@ -1,3 +1,6 @@
+.o
+.so
+/Debug/
 /.settings/
 .settings/
 /.settings
@@ -11,3 +14,5 @@
 .pydevproject
 .cproject
 .project
+gitForEclipse.exe.stackdump
+MyEci.exe.stackdump
