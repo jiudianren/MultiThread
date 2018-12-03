@@ -7,6 +7,8 @@
 /.settings/
 /.settings/*
 /.settings/language.settings.xml
+/.settings/org.eclipse.cdt.managedbuilder.core.prefs
+.settings/language.settings.xml
 .settings/org.eclipse.cdt.managedbuilder.core.prefs
 
 /Default/
