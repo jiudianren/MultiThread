@@ -35,6 +35,9 @@ std::lock(lhs.m,rhs.m); // 1
 #std::launch
 
 
+# std::promise<T> 
+## std::promise<T>.set_exception
+
 #std::lock_guard<std::mutex>
 		std::lock_guard<std::mutex> lock_a(lhs.m,std::adopt_lock);
 		std::lock_guard<std::mutex> lock_b(rhs.m,std::adopt_lock);
