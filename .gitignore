@@ -7,8 +7,6 @@
 /.settings/
 /.settings/*
 /.settings/language.settings.xml
-/.settings/org.eclipse.cdt.managedbuilder.core.prefs
-.settings/language.settings.xml
 .settings/org.eclipse.cdt.managedbuilder.core.prefs
 
 /Default/
@@ -16,5 +14,7 @@
 .pydevproject
 .cproject
 .project
-gitForEclipse.exe.stackdump
-MyEci.exe.stackdump
+.settings/language.settings.xml
+.settings/org.eclipse.cdt.managedbuilder.core.prefs
+.settings/language.settings.xml
+.settings/language.settings.xml
