@@ -31,10 +31,10 @@ void thread_work()
 			return;
 		task= tasks.pop();
 	}
-	auto re = task.sencond();
+    auto futRe =  task.sencond.get_future();
 	{
 		std::lock_guard<std::mutex> lk(mput);
-		result.insert( std::make_pair(task.first,re ));
+		result.insert( std::make_pair(task.first,futRe.get() ));
 	}
 }
 
@@ -48,7 +48,8 @@ int main()
 	for(auto it : inputs)
 	{
 		auto func = std::bind(work, *it );
-		tasks.insert( std::make_pair(index++, func));
+		std::packaged_task<float()> task(func);
+		tasks.insert( std::make_pair(index++, task));
 	}
 
 	/*使用线程 集合 */
